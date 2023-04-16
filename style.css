@@ -595,7 +595,7 @@ section {
 /* Energy-data section start */
 
 .Energy-Data .row-Energy-Data {
-  background: url(/images/Energy-Data-banner.png);
+  background: url(../images/Energy-Data-banner.png);
   height: 45rem;
   background-size: cover;
   background-position: center;
@@ -657,7 +657,7 @@ section {
 }
 
 .Data .row-Data .Data {
-  background: url(/images/graph-chart.jpg) no-repeat;
+  background: url(../images/graph-chart.jpg) no-repeat;
   background-size: cover;
   position: relative;
   background-position: center;
@@ -680,7 +680,7 @@ section {
 }
 
 .Data2019 .row-Data2019 .Data2019 {
-  background: url(/images/Primary\ Energy\ Consumption\,\ 2019\ By\ World.jpg)
+  background: url(../images/Primary\ Energy\ Consumption\,\ 2019\ By\ World.jpg)
     no-repeat;
   position: relative;
   background-position: center;
@@ -692,7 +692,7 @@ section {
 /* Energy-conservation section start */
 
 .Energy-Conservation .row-Energy-Conservation {
-  background: url(/images/Energy-conservation-banner.png) no-repeat;
+  background: url(../images/Energy-conservation-banner.png) no-repeat;
   height: 45rem;
   background-size: cover;
   background-position: center;
@@ -755,7 +755,7 @@ section {
 }
 
 .renewableenergy .row-renewableenergy {
-  background: url(../images../Primary\ Energy\ As\ Renewable\ Energy.jpg) no-repeat;
+  background: url(../images/Primary\ Energy\ As\ Renewable\ Energy.jpg) no-repeat;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -778,7 +778,7 @@ section {
 }
 
 .world-renewable-energy .row-world-renewable-energy {
-  background: url(/images/Renewable\ Energy\ Generation\ By\ World.jpg)
+  background: url(../images/Renewable\ Energy\ Generation\ By\ World.jpg)
     no-repeat;
   position: relative;
   background-position: center;
@@ -790,7 +790,7 @@ section {
 /* ActionByYou section start */
 
 .ActionByYou .row-ActionByYou {
-  background: url(/images/ActionByYou-banner.jpg) no-repeat;
+  background: url(../images/ActionByYou-banner.jpg) no-repeat;
   height: 45rem;
   background-size: cover;
   background-position: center;
@@ -1198,7 +1198,7 @@ section {
   left: 0;
   width: 100%;
   height: 100px;
-  background: url("/images/wave.png");
+  background: url("../images/wave.png");
   background-size: 1000px 100px;
 }
 

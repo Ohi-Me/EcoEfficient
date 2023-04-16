@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- remix icon cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- title -->
+    <link rel="shortcut icon" type="image/png" href="images/logoweb.png" />
+    <link rel="stylesheet" href="images/logoweb.png" />
+    <title>EcoEfficient</title>
+
+    <!--required script for chart and plotly-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6f2411e949.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="images/logoweb.png" alt="" />
+      </a>
+
+      <nav class="navbar">
+        <a href="#home" class="ri-home-4-fill"> Home</a>
+        <a href="#Energy-Crisis" class="ri-lightbulb-flash-fill"
+          >Energy-Crisis</a
+        >
+        <a href="#Energy-Data" class="ri-leaf-fill">Energy-Data</a>
+        <a href="#Energy-Conservation" class="ri-run-fill"
+          >Energy-Conservation</a
+        >
+        <a href="#ActionByYou" class="ri-user-heart-line">ActionByYou</a>
+        <a href="#News" class="ri-newspaper-fill">News&Events</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="ri-play-list-fill"></div>
+        <div id="task-btn" class="ri-cloud-windy-fill"></div>
+        <div id="login-btn" class="fa-solid fa-user-group"></div>
+      </div>
+    </header>
+
+    <!-- header section ends  -->
+
+    <!-- Task section start -->
+    <section class="task-cart-container">
+      <div class="task-container">
+        <h3 class="title">Your Tasks, have taste of energy</h3>
+
+        <div class="box-container">
+          <div class="box">
+            <img src="images/task-images/sun-bath.png" alt="" />
+            <div class="content">
+              <h3>Use natural light</h3>
+              <span>Earned : </span>
+              <span class="Ponits">
+                <i class="ri-award-line"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/task-images/plant-trees.png" alt="" />
+            <div class="content">
+              <h3>Plant trees</h3>
+              <span>Earned : </span>
+              <span class="Ponits">
+                <i class="ri-award-fill"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/task-images/reusable-bag.png" alt="" />
+            <div class="content">
+              <h3>Use reusable bags and containers</h3>
+              <span>Earned : </span>
+              <span class="Ponits">
+                <i class="ri-medal-line"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/task-images/reduce-meat.png" alt="" />
+            <div class="content">
+              <h3>Reduce meat consumption</h3>
+              <span>Earned : </span>
+              <span class="Ponits">
+                <i class="ri-medal-fill"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/task-images/compost.png" alt="" />
+            <div class="content">
+              <h3>Composting</h3>
+              <span>Earned : </span>
+              <span class="Ponits">
+                <i class="ri-medal-2-line"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/task-images/energy-saving.png" alt="" />
+            <div class="content">
+              <h3>Practice energy-saving habits at work</h3>
+              <span>Earned : </span>
+              <span class="Ponits">
+                <i class="ri-medal-2-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task-section end -->
+
+    <!-- login-form start -->
+
+    <div class="login-form-container">
+      <form action="">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <div class="remember">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+        <p>forget password? <a href="#">click here</a></p>
+        <p>donot have an account? <a href="#">create one</a></p>
+      </form>
+    </div>
+
+    <!-- login-form end -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <span>Welcome to The EcoEfficient</span>
+        <h3>The future is clean and green, just save energy and Dopamin.</h3>
+        <p>
+          Experience the Endorphin, By reducing our dependency on fossil fuels
+          and the amount of carbon we produce. Together, let's build a future
+          that is more promising, healthier, and joyous for everyone.
+        </p>
+        <a
+          href="https://education.nationalgeographic.org/resource/ecosystem/"
+          class="btn"
+          >Ecosystem</a
+        >
+      </div>
+
+      <div class="image">
+        <img src="images/ecosystem.png" alt="" class="home-img" />
+      </div>
+    </section>
+
+    <!-- home section ends  -->
+
+    <!-- steps section starts  -->
+
+    <section class="steps">
+      <a href="#" class="box">
+        <img src="images/steps/cleaning-beach.png" alt="" />
+        <h3>Eco-Conscious</h3>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/steps/ecolution-icon.png" alt="" />
+        <h3>Reduce-Co2</h3>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/steps/solar-charge.png" alt="" />
+        <h3>Solar-Energy</h3>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/steps/reduce-co2.png" alt="" />
+        <h3>Clean-Green</h3>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/steps/biofuel.png" alt="" />
+        <h3>Green-Revoultion</h3>
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/steps/biofuel.png" alt="" />
+        <h3>Biofuel</h3>
+      </a>
+    </section>
+
+    <!-- steps section ends -->
+
+    <!-- energy-crisis section starts  -->
+
+    <section class="Energy-Crisis" id="Energy-Crisis">
+      <div class="image">
+        <img src="images/energy-crisiss.png" alt="" />
+      </div>
+
+      <div class="content">
+        <span>What are Energy crisis will affect us?</span>
+        <h3 class="title">Some of causes of energy crisis</h3>
+        <p>
+          Geopolitical tensions, natural disasters, supply interruptions,
+          inadequate infrastructure, and wasteful energy consumption are just a
+          few of the things that might lead to an energy crisis.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Energy_crisis" class="btn"
+          >read more</a
+        >
+        <div class="icons-container">
+          <div class="icons">
+            <img src="images/Energy-crisis/health.png" alt="" width="200" />
+            <h3>health impacts</h3>
+            <p>
+              Human health can be significantly impacted by energy crises,
+              particularly in low-income nations where energy poverty is
+              widespread. Moreover, power outages can have an impact on medical
+              facilities, interfere with medical procedures, and raise the
+              danger of infectious outbreaks and water-borne illnesses.
+            </p>
+          </div>
+          <div class="icons">
+            <img src="images/Energy-crisis/economics.png" alt="" width="200" />
+            <h3>economic impacts</h3>
+            <p>
+              Energy crises can also have an impact on people's possibilities
+              for employment and way of life. High energy costs can raise living
+              expenses, lower purchasing power, and have an impact on the
+              competitiveness of various industries and small businesses. Power
+              outages can interfere with communication, transportation, and
+              production processes, resulting in lost profits, decreased output,
+              and job losses.
+            </p>
+          </div>
+          <div class="icons">
+            <img src="images/Energy-crisis/social.png" alt="" width="200" />
+            <h3>social impacts</h3>
+            <p>
+              Energy crises can worsen social injustices and have an impact on
+              vulnerably grouped individuals, including women, children, and the
+              elderly. Access to information, educational opportunities, and
+              social mobility can all be hampered by a lack of energy. Also,
+              especially in urban areas, power outages can raise the danger of
+              crime, violence, and social instability.
+            </p>
+          </div>
+          <div class="icons">
+            <img
+              src="images/Energy-crisis/environmental.png"
+              alt=""
+              width="200"
+            />
+            <h3>environmental impacts</h3>
+            <p>
+              Energy crises may have a negative influence on the environment and
+              on people's health, way of life, and general well-being. The
+              quality and accessibility of natural resources like water, food,
+              and forests can be impacted by the burning of fossil fuels, which
+              can also cause air pollution, climate change, and biodiversity
+              loss.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- energy-crisis section ends -->
+
+    <!-- energy data section starts  -->
+
+    <section class="Energy-Data" id="Energy-Data">
+      <div class="row-Energy-Data"></div>
+    </section>
+
+    <section class="Energy-DataDup">
+      <div class="row-Energy-DataDup">
+        <div class="content">
+          <span>Energy-Data</span>
+          <h3>See energy Impacts on Earth</h3>
+          <p>
+            Environmental deterioration, air and water pollution, climate
+            change, and a greater reliance on nonrenewable energy sources are
+            just a few of the negative effects of the energy crisis on the
+            planet.
+          </p>
+          <a
+            href="https://ourworldindata.org/energy-production-consumption"
+            class="btn"
+            >read more</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- energy data section ends -->
+
+    <!--primary energy data start-->
+
+    <section class="Data" id="Data">
+      <div class="heading">
+        <span>Graph of Annual change in primary energy consumption</span>
+        <br />
+        <h3>
+          Global energy consumption continues to grow, but it does seem to be
+          slowing averaging around 1% to 2% per year.
+        </h3>
+      </div>
+    </section>
+
+    <section class="Data">
+      <div class="row-Data">
+        <canvas
+          id="energy-chart"
+          style="width: 100%; height: 400px"
+          class="Data"
+        ></canvas>
+      </div>
+    </section>
+
+    <!--primary energy data ends-->
+
+    <!--chart2019 data start-->
+
+    <section class="Data2019" id="Data2019">
+      <div class="heading">
+        <span>primary energy consumption, 2019 by world</span>
+        <br />
+        <h3>
+          This interactive chart shows primary energy consumption
+          country-by-country. It is the sum of total energy consumption,
+          including electricity, transport and heating.
+        </h3>
+      </div>
+    </section>
+
+    <section class="Data2019">
+      <div class="row-Data2019">
+        <canvas
+          id="Data-2019"
+          style="width: 100%; height: 400px"
+          class="Data2019"
+        ></canvas>
+      </div>
+    </section>
+
+    <!--chart2019 data ends-->
+
+    <!-- Energy conservation section starts  -->
+
+    <section class="Energy-Conservation" id="Energy-Conservation">
+      <div class="row-Energy-Conservation"></div>
+    </section>
+
+    <section class="Energy-ConservationDup">
+      <div class="row-Energy-ConservationDup">
+        <div class="content">
+          <span>Energy-Conservation</span>
+          <h3>Time for conservation of energy</h3>
+          <p>
+            The need for energy conservation is urgent since it is essential to
+            combating climate change and lowering greenhouse gas emissions.
+          </p>
+          <a href="https://www.iea.org/topics/energy-efficiency" class="btn"
+            >read more</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Energy conservation section ends -->
+
+    <!--renewable energy start-->
+
+    <section class="renewableenergy" id="renewableenergy">
+      <div class="heading">
+        <span>Primary energy as Renewable energy</span>
+        <br />
+        <h3>
+          Renewable energy sources include hydropower, solar, wind, geothermal,
+          bioenergy, wave, and tidal.
+        </h3>
+      </div>
+    </section>
+
+    <section class="renewableenergy">
+      <div class="row-renewableenergy">
+        <canvas
+          id="renewable-energy"
+          style="width: 100%; height: 400px"
+          class="renewableenergy"
+        ></canvas>
+      </div>
+    </section>
+
+    <!--renewable energy ends-->
+
+    <!--world-renewable-energy start-->
+
+    <section class="world-renewable-energy" id="world-renewable-energy">
+      <div class="heading">
+        <span>Renewable energy generation by world</span>
+        <br />
+        <h3>
+          Renewable energy generation include hydropower, solar, wind and
+          geothermal in recent years.
+        </h3>
+      </div>
+    </section>
+
+    <section class="world-renewable-energy">
+      <div class="row-world-renewable-energy">
+        <canvas
+          id="worldrenewable-energy"
+          style="width: 100%; height: 400px"
+          class="world-renewable-energy"
+        ></canvas>
+      </div>
+    </section>
+
+    <!--world-renewable-energy  ends-->
+
+    <!--ActionByYou section starts  -->
+
+    <section class="ActionByYou" id="ActionByYou">
+      <div class="row-ActionByYou"></div>
+    </section>
+
+    <section class="ActionByYouDup">
+      <div class="row-ActionByYouDup">
+        <div class="content">
+          <span>Action By You</span>
+          <h3>Do which, imapcts your future</h3>
+          <p>
+            The world needs to work together to handle the energy crisis, which
+            is a global issue. The following are some possible course of action
+            for resolving the energy crisis:
+          </p>
+          <a
+            href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/eu-action-address-energy-crisis_en"
+            class="btn"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--Actions-->
+
+    <section class="Actions" id="Actions">
+      <div class="heading">
+        <span>Actions</span>
+        <h3>Your Actions makes great future impacts</h3>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/actions/Encourage Energy Conservation.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Encourage energy conservation:</h3>
+            <p>
+              One of the simplest and most effective strategies to decrease
+              energy use is to encourage energy conservation. Governments may
+              launch initiatives to inform the populace of the benefits of
+              reducing their energy consumption.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/actions/Enhance Energy Efficiency.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Enhance energy efficiency:</h3>
+            <p>
+              By improving the energy efficiency of buildings, cars, and
+              appliances, energy consumption and costs can be reduced.
+              Governments can provide financial incentives to entice people and
+              companies to employ energy-efficient technology.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/actions/Invest In Renewable Energy.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Invest in renewable energy:</h3>
+            <p>
+              The usage of finite fossil fuels contributes to climate change.
+              Investment in renewable energy sources like hydroelectricity,
+              wind, and solar is essential to reducing carbon emissions and
+              diversifying the energy mix.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/actions/Take Use Of Nuclear Power.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Take use of nuclear power:</h3>
+            <p>
+              Carbon emissions can be reduced with the use of nuclear power, a
+              dependable, clean energy source. Governments can allocate funds
+              for research and development to make nuclear energy safer and more
+              accessible.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/actions/Promote International Cooperation.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>Promote international cooperation:</h3>
+            <p>
+              The energy crisis is a worldwide problem, and solving it will
+              require international cooperation. Countries can work together on
+              energy policies, exchange knowledge and technology, and plan
+              initiatives to cut carbon emissions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ActionByYou section ends -->
+
+    <!-- News section starts  -->
+
+    <section class="News" id="News">
+      <div class="heading">
+        <span>News</span>
+        <h3>Be connected to part of world energy</h3>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/news&events/uk gas.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="tags">
+              <a href="https://www.bbc.com/news/topics/c2041rg5e6gt">
+                <i class="fas fa-tag"></i> BBC /
+              </a>
+              <a
+                href="https://edition.cnn.com/2022/10/25/energy/global-energy-crisis-iea-fatih-birol/index.html"
+              >
+                <i class="fas fa-tag"></i> CNN /
+              </a>
+              <a
+                href="https://www.theguardian.com/commentisfree/2022/oct/07/energy-crisis-it-isnt-that-we-have-too-little-oil-and-gas-we-have-too-much-lucas"
+              >
+                <i class="fas fa-tag"></i> The Guardian
+              </a>
+            </div>
+
+            <h3>
+              "Energy crisis: UK and US call for more oil output as prices
+              surge" - The Guardian
+            </h3>
+            <p>
+              The UK and US have called on major oil-producing countries to
+              increase output to help alleviate the ongoing energy crisis, which
+              has led to soaring prices for oil and gas. The two countries are
+              particularly concerned about the impact on consumers and
+              businesses, and are urging OPEC+ to boost production. However,
+              some experts warn that increasing production could have negative
+              environmental consequences and that a long-term transition to
+              renewable energy is needed. The situation remains uncertain, with
+              many countries still struggling to secure adequate supplies of
+              energy. The cost of coal and carbon emissions permits also hit
+              record levels, while crude oil exceeded $80 a barrel for the first
+              time in three years.
+            </p>
+            <a
+              href="https://www.theguardian.com/business/2021/sep/28/uk-wholesale-gas-prices-highs-winter-energy-crisis-suppliers"
+              class="btn"
+              >read more</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/news&events/trader-oil price .png" alt="" />
+          </div>
+          <div class="content">
+            <div class="tags">
+              <a
+                href="https://www.cnbc.com/2022/11/01/energy-crisis-next-winter-will-be-more-challenging-oil-ceos-warn.html"
+              >
+                <i class="fas fa-tag"></i> CNBC /
+              </a>
+              <a href="https://www.dw.com/en/energy-crisis/t-63055322">
+                <i class="fas fa-tag"></i> DW /
+              </a>
+              <a href="https://www.iea.org/topics/global-energy-crisis">
+                <i class="fas fa-tag"></i> Iea
+              </a>
+            </div>
+
+            <h3>
+              "Oil prices jump to multi-year highs as energy crisis deepens" -
+              CNBC
+            </h3>
+            <p>
+              Oil prices have surged to multi-year highs as the ongoing energy
+              crisis continues to deepen. The situation has been exacerbated by
+              a combination of factors, including supply chain issues, increased
+              demand, and geopolitical tensions. The soaring prices are hitting
+              businesses and consumers hard, with many facing steep energy bills
+              and potential blackouts. Governments and energy companies are
+              scrambling to find solutions, including increasing domestic
+              production and tapping into emergency reserves, but experts warn
+              that a long-term transition to renewable energy is needed to avoid
+              similar crises in the future. The situation remains uncertain,
+              with many countries still struggling to secure adequate supplies
+              of energy.
+            </p>
+            <a
+              href="https://www.cnbc.com/2022/03/02/us-oil-jumps-to-highest-since-2013-tops-109-a-barrel.html"
+              class="btn"
+              >read more</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/news&events/china dig .png" alt="" />
+          </div>
+          <div class="content">
+            <div class="tags">
+              <a href="https://www.nature.com/articles/d41586-022-04467-w">
+                <i class="fas fa-tag"></i> Nature /
+              </a>
+              <a
+                href="https://www.conserve-energy-future.com/causes-and-solutions-to-the-global-energy-crisis.php"
+              >
+                <i class="fas fa-tag"></i> Conserve Energy Future /
+              </a>
+              <a
+                href="https://economictimes.indiatimes.com/topic/energy-crisis"
+              >
+                <i class="fas fa-tag"></i> The Economics Times
+              </a>
+            </div>
+
+            <h3>
+              "China's energy crisis worsens as coal prices surge, factories
+              shut down" - Reuters
+            </h3>
+            <p>
+              China is grappling with an energy crisis as coal prices surge and
+              factories are forced to shut down due to a lack of power. The
+              country is heavily reliant on coal for energy generation, but
+              supply chain issues and increased demand have caused a sharp
+              increase in prices. The situation is impacting businesses and
+              consumers, with some experiencing power shortages and reduced
+              production. The government is exploring various measures to
+              address the crisis, including increasing domestic production and
+              investing in renewable energy, but experts warn that a long-term
+              transition is needed to avoid similar crises in the future.
+            </p>
+            <a
+              href="https://www.reuters.com/business/energy/china-digs-coal-oil-gains-energy-crisis-deepens-2021-10-08/"
+              class="btn"
+              >read more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News section ends  -->
+
+    <!-- events section starts  -->
+
+    <section class="Events" id="Events">
+      <div class="heading">
+        <span>Events</span>
+        <h3>Be part of Change</h3>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <h3><i class="fas fa-calendar"></i> 20 - 21 june 2023</h3>
+            <img src="images/news&events/energy economics times.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Energy Leadership summit 2023</h3>
+            <p>
+              The Economic Times Energy Leadership Summit seeks to answer these
+              difficult but crucial questions facing the energy leaders of
+              today.
+            </p>
+            <a
+              href="https://energy.economictimes.indiatimes.com/leadership-summit?ag=Paid-GoogleSearch&utm_source=Paid-GoogleSearch&utm_medium=CPC&utm_campaign=ETEnergy-Leadership-Summit-2023-Search-Traffic&gclid=Cj0KCQjw27mhBhC9ARIsAIFsETFP-W2pVKCBUCWayFOQJskKoYnSm08AYJK0KjAUuU7t-fMdWl-640MaAlOtEALw_wcB"
+              class="btn"
+              >Read more</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <h3><i class="fas fa-calendar"></i>26 - 28 June 2023</h3>
+            <img src="images/news&events/energy-asia.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Energy asia 2023</h3>
+            <p>
+              The goal is to decarbonise the region by subscribing to global
+              best practices, as well as best-in-class technologies and
+              innovative solutions.
+            </p>
+            <a
+              href="https://www.officialenergyasia.com/?utm_source=google&utm_medium=sem&utm_campaign=cn2023+Energy+Asia+2023&utm_content=event&gclid=Cj0KCQjw27mhBhC9ARIsAIFsETFHz80mqXmTGs0wu4zYVfJVpOgn9c6WFWCWbLdJBF8PXrbC8_x-6KIaArtUEALw_wcB"
+              class="btn"
+              >Read more</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <h3><i class="fas fa-calendar"></i> 22 -25 April 2024</h3>
+            <img src="images/news&events/world-energy-council.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>World energy council 2024</h3>
+            <p>
+              A chance to build on the energy lessons of the past and shape the
+              next 100 years of world energy. A unique opportunity to engage in
+              leadership dialogue and innovative thinking.
+            </p>
+            <a
+              href="https://worldenergycongress.org/rotterdam/?utm_source=World%20Energy%20Council&utm_medium=Website&utm_campaign=FeaturedSlider"
+              class="btn"
+              >Read more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- events section ends -->
+
+    <!-- footer section starts  -->
+
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item">
+          <a class="menu__link" href="#Actions">ActionByYou</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#News">News&Events</a>
+        </li>
+      </ul>
+      <p>&copy;2023 Ohi_Me | Think Globally, Act Locally</p>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <!--JAVASCRIPT-->
+
+    <!--other script-->
+    <script src="primary-energy-consumption.js"></script>
+    <script src="primary-energy-consumption-2019.js"></script>
+    <script src="renewable-energy.js"></script>
+    <script src="world.renewable.energy.js"></script>
+    <!--script for footer-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- JavaScript for bootstrap -->
+    <!-- jQuery ,  Popper.js,  Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--footer-script-required-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
